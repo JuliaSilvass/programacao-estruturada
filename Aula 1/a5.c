@@ -1,3 +1,5 @@
+/*Fazer um programa que recebe 3 valores inteiros do usuário e mostra o maior deles, o menor
+deles e o valor intermediário.*/
 #include <stdio.h>
 int main (){
     int v1, v2, v3;

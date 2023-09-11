@@ -1,3 +1,9 @@
+/*Escreva um programa em C que leia as medidas dos lados de um triângulo e escreva se ele é:
+EQUILÁTERO, ISÓSCELES ou ESCALENO.
+Observação:
+• Triângulo equilátero: Possui os 3 lados iguais.
+• Triângulo isósceles: Possui 2 lados iguais.
+• Triângulo escaleno: Possui 3 lados diferentes.*/
 #include <stdio.h>
 int main (){
     int l1;

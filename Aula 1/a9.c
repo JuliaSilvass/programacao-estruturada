@@ -1,3 +1,5 @@
+/*Faça um programa em C que receba um número inteiro e positivo, e diga se esse número é
+primo ou não. Obs: Um número é primo somente quando for divisível por 1 e por ele mesmo.*/
 #include <stdio.h> 
 int main (){
     int n = 0, aux = 0; 

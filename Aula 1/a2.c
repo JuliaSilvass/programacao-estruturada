@@ -1,3 +1,5 @@
+/*Fazer um programa em “C” para calcular o IMC (Índice de Massa Corporal), que é calculado
+dividindo o peso (em kg) pela altura ao quadrado (em metros).*/
 #include <stdio.h>
 int main(){
     float a;

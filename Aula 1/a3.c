@@ -1,3 +1,4 @@
+/*Leia um número inteiro e escreva se ele é par ou ímpar.*/
 #include <stdio.h> 
 int main(){
     int n; 
