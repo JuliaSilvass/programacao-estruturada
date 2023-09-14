@@ -24,30 +24,19 @@ int main(){
   scanf("%d",&saque);
 
   // NOTA DE 100
-  while(saque > 99){
-    n100++;
-    saque = saque - 100;
-  }
+  n100 = saque / 100;
+  saque = saque % 100;
   // NOTA DE 50
-  while(saque > 49){
-    n50++;
-    saque = saque - 50;
-  }
+  n50 = saque / 50;
+  saque = saque % 50;
   // NOTA DE 10
-  while(saque > 9){
-    n10++;
-    saque = saque - 10;
-  }
+  n10 = saque / 10;
+  saque = saque % 10;
   // NOTA DE 5
-  while(saque > 4){
-    n5++;
-    saque = saque - 5;
-  }
+  n5 = saque / 5;
+  saque = saque % 5;
   // NOTA DE 2
-  while(saque > 1){
-    n2++;
-    saque = saque - 2;
-  }
+  n2 = saque / 2;
 
 
   printf ("Notas de 100: %d \n", n100);
