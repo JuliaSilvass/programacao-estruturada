@@ -8,3 +8,23 @@ Para lado igual a 5:
 *       *
 * * * * * 
 */
+#include <stdio.h>
+int main (){
+    int lado; 
+
+    printf("digite a tamanho do lado: ");
+    scanf("%d", &lado);
+
+    for (int i = 1; i <= lado; i++){
+        for (int j = 1; j <= lado; j++){
+            if ((i > 1 && i < lado) && (j > 1 && j < lado)){
+                printf ("  ");
+            } else {
+                printf("* ");
+            }
+
+        }
+        printf ("\n");
+    }
+    
+}

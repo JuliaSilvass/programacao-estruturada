@@ -1,0 +1,1 @@
+/*Faça um que decifre o código gerado no programa anterior.*/
