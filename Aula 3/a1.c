@@ -27,7 +27,7 @@ int main (){
     }
 
     printf ("Menor elemento do vetor: %d \n", v[0]);
-    printf ("Marior elemento do vetor: %d \n", v[9]);
+    printf ("Maior elemento do vetor: %d \n", v[9]);
     
     return 0;
 }
