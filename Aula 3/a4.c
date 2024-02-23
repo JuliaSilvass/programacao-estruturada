@@ -4,3 +4,23 @@ receba o valor em uma variável inteira e após isso monte um vetor com os valor
 6 2 2 6
 M C D U
 */
+
+#include <stdio.h> 
+
+int main() {
+    int num = 0, vetor[4];
+
+    printf("Digite um número de 4 dígitos: ");
+    scanf("%d", &num);
+
+    if (num <= 9999){  
+
+        vetor[0] = num /1000;
+        
+        
+    }
+
+
+    
+
+    return 0;
