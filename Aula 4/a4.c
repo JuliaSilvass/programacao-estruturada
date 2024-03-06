@@ -9,6 +9,7 @@ quantidade de vezes de cada combinação.
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#define TAM 6
 
 
 void sorteio(int *dado1, int *dado2);
@@ -16,28 +17,30 @@ int soma (int dado1, int dado2);
 
 int main (){
 
+    srand(time(NULL));
     int dado1, dado2;
-    int *pdado1, *pdado2;
-    pdado1 = &dado1;
-    pdado2 = &dado2;
+    int matriz [6][6] = {0};
 
-    sorteio(pdado1, pdado2);
-    printf("dado 1: %d - dado 2: %d \n", dado1, dado2);
-    
-    int somaR = soma(dado1, dado2);
-    printf ("soma: %d \n", somaR);
+    for (int k = 0; k < 40000; k++){
+        sorteio(&dado1, &dado2);    
+        matriz[dado1 - 1][dado2 - 1] = soma(dado1, dado2);    
+        }
+
+    for (int i = 0; i < TAM; i++){
+        for (int j = 0; j < TAM; j++){
+            printf ("%d \t", matriz[i][j]);
+        }
+        printf ("\n");    
+    }
 
     return 0;
 }
 
 void sorteio(int *dado1, int *dado2){
-    srand(time(NULL));
-    *dado1 = (rand() % 6) + 1;  
-    *dado2 = (rand() % 6) + 1;
+    *dado1 = (rand() % TAM) + 1;  
+    *dado2 = (rand() % TAM) + 1;
 }
 
 int soma(int dado1, int dado2){
-    int soma = dado1 + dado2;
-
-    return soma; 
+    return dado1 + dado2; 
 }
