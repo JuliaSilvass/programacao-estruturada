@@ -6,3 +6,4 @@ distribua 7 pedras para cada um dos 2 jogadores e as pedras que ficam na pilha,
 obviamente que a cada rodada do programa as pedras devem ser diferentes para
 cada um dos jogadores (deve haver uma rotina no programa para misturar as
 pedras a ser entregue).*/
+
